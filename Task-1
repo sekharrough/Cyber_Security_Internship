@@ -1,0 +1,37 @@
+Scan Local Network for Open ports
+----------------------------------------------
+NMAP Scan
+nmap -sS 192.168.136.0/24     
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-08-13 22:29 EDT
+Nmap scan report for 192.168.136.1
+Host is up (0.00030s latency).
+All 1000 scanned ports on 192.168.136.1 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 00:50:56:C0:00:08 (VMware)
+
+Nmap scan report for 192.168.136.2
+Host is up (0.00040s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE
+53/tcp open  domain
+MAC Address: 00:50:56:FB:C0:3A (VMware)
+
+Nmap scan report for 192.168.136.254
+Host is up (0.00049s latency).
+All 1000 scanned ports on 192.168.136.254 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 00:50:56:ED:EB:CC (VMware)
+
+Nmap scan report for 192.168.136.134
+Host is up (0.0000080s latency).
+All 1000 scanned ports on 192.168.136.134 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+
+Nmap done: 256 IP addresses (4 hosts up) scanned in 8.69 seconds
+                                                                  
+
+
+→ Nmap Syn scan has been run on 192.168.136.0/24 network range
+→ Observed port 53 is open on host 192.168.136.2
+→ On hosts 192.168.136.1 & 192.168.136.254 ports are in filtered state, the NMAP probes which are sent being blocked or prevented by possible firewall
+→ Observed in Wireshark Syn request has been reset for ports which are filtered or closed
